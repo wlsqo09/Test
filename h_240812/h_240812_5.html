@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>문진배 회원 인증 입력 양식</title>
+    </head>
+    <body>
+        <h2>회원 인증 입력</h2>
+        <form action="page.jsp" method="get">
+            <fieldset>
+                <legend>필수정보</legend>
+                    <p>지점 : <input type="text" name="branch" value="천안"></p>
+                    <p>과정 : <input type="text" name="major" value="디지털 컨버전스" maxlength="12"></p>
+            </fieldset>
+            <fieldset>
+                <legend>개인정보</legend>
+                    <p>이름 : <input type="text" name="name" size="3" required></p>
+                    <p>비밀번호 : <input type="password" name="password" size="20"
+                            placeholder="특수문자 포함 10자리 이상" minlength="10" required></p>
+                    <p>당신의 성별은 무엇입니까?</p>
+                        <input type="radio" name="sex" value="name">상관없음
+                        <input type="radio" name="sex" value="male" checked>남자
+                        <input type="radio" name="sex" value="female">여자
+            </fieldset>
+            <fieldset>
+                <legend>설문조사</legend>
+                <p>의견:</p>
+                    <textarea rows="5" cols="50"
+                        maxlength="100">(최대100자)</textarea>
+            </fieldset>
+            <p></p>
+            <input type="submit" value="전송">
+            <input type="reset" value="다시작성">
+        </form>
+    </body>
+</html>

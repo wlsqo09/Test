@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>문진배 숙제</title>
+      <style>
+        body{
+            background-color: white;
+        }        
+        .flex-container{
+            background-color:   white;
+            color: gray;
+            width: 600px;
+            height: 600px;
+            text-align: center; 
+            margin-top: 30px;
+            padding-top: 20px;
+            position: absolute;
+            left: 350px;
+        }
+        #input1{
+            background-color: rgb(214, 218, 219);
+            color: gray;
+            border-color: 1px solid white;
+            margin: 20px;
+            width: 400px;
+            height: 30px;
+        }
+        button{
+            background-color: gray;
+            color: white;
+            margin-top: 20px;
+            width: 200px;
+            height: 40px;
+            font-size: 20px;
+        }
+        textarea{
+            background-color: rgb(214, 218, 219);
+            color: gray;
+            border-color: 1px solid white;
+            margin: 20px;
+            width: 400px;
+            height: 30px;
+        }
+        label{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <img src="../img/ggle.jpg" style="width: 50px; height: 50px;">
+        <h2>회원 가입</h2>
+        <input id="input1" type="name" placeholder="아이디"><br>
+        <input id="input1" type="password" placeholder="비밀번호"><br>
+        <input id="input1" type="password" placeholder="비밀번호 확인"><br>
+        <input id="input1" type="name" placeholder="닉네임"><br>
+        <textarea placeholder="가입 목적"></textarea><br>
+        <input type="checkbox" id="check">
+        <label for="check">정보 제공 동의</label><br>
+        <button>가입</button>
+        <button>취소</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>문진배 표 만들기</title>
+      <style>
+        table{
+            border-collapse: border;
+        }
+        th, td{
+            border:1px solid #000000;
+            padding: 8px;
+            text-align: center;
+        }
+  </style>
+    </head>
+    <body>
+        <table>  
+            <caption>테이블 제목</caption>
+                <tr>
+                    <th>1행 제목</th>
+                    <td rowspan="2">1행 1열+2행 1열</td>
+                    <td>1행 2열</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">2행 제목<br>+<br>3행 제목</th>
+                    <td>2행 1열</td>
+                </tr>
+                <tr>
+                    <td colspan="3">3행 1열+3행 2열</td>
+                </tr>
+        </table>
+     </body>
+</html>

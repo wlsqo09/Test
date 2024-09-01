@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>문진배 라디오 입력양식</title>
+    </head>
+    <body>
+        <form>
+            <h3>당신의 성별은 무엇입니까></h3>
+            <input type="radio" name="sex" value="none">알수없음
+            <input type="radio" name="sex" value="male" checked>남자
+            <input type="radio" name="sex" value="female">여자
+
+            <p></p>
+
+            <h3>수업과 관련하여 공부한 기간이 얼마나 되십니까?</h3>
+            <input type="radio" name="period" value="less than3" checked>3개월 이하/없음
+            <input type="radio" name="period" value="less than6">6개월 이하
+            <input type="radio" name="period" value="less than 1year">1년 이하
+            <input type="radio" name="period" value="more than 1year">1년 이상
+
+            <p></p>
+
+            <h3>현재 관심을 가지고 있는 학습 주제는 무엇입니까?</h3>
+            <input type="checkbox" name="subject" value="HTML5">HTML5
+            <input type="checkbox" name="subject" value="CSS3">CSS3
+            <input type="checkbox" name="subject" value="Java Script">Java Script
+            <input type="checkbox" name="subject" value="Jquery">Jquery
+
+            <p></p>
+
+            <input type="submit" value="제출">
+            <input type="reset" value="다시작성">
+        </form>
+    </body>
+</html>

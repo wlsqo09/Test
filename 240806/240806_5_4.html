@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>문진배 css 6.3 chapter</title>
+        <style>
+            div{
+                width: 160px;
+                height: 120px;
+                background: red url('../img/coffee.jpg');
+            }
+            .div2{
+                width: 160px;
+                height: 120px;
+                background-image: url('../img/coffee.jpg');
+            }
+            .div3{
+                width: 320px;
+                height: 120px;
+                background-image: url('../img/coffee.jpg');
+                background-repeat: no-repeat;
+                border: 1px solid black ;
+            }
+            .div4{
+                width: 80px;
+                height: 60px;
+                background-image: url('../img/coffee.jpg');
+                background-size:80px 60px 
+            }
+            .div5{
+                width: 200px;
+                height: 150px;
+                background-image: url('../img/coffee.jpg');
+                background-size:cover 160px 120px ;
+            }
+            .div6{
+                width: 200px;
+                height: 150px;
+                background-image: url('../img/coffee.jpg');
+                background-size:cover 160px 120px ;
+            }
+            .div7{
+                width: 200px;
+                height: 150px;
+                background-image: url('../img/coffee.jpg');
+                background-size:contain ;
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <br>
+        <div class="div2"></div>
+        <br>
+        <div class="div3"></div>
+        <br>
+        <div class="div4"></div>
+        <br>
+        <div class="div5"></div>
+        <br>
+        <div class="div6"></div>
+        <br>
+        <div class="div7"></div>
+    </body>
+</html>

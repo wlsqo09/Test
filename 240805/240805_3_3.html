@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>문진배 css 전체선택자</title>
+      <style>
+        a:link{ /*한 번도 방문한 적이 없는 링크*/
+            color:orange;
+        }
+        a:visited{ /*한번이라도 방문한 적이 있는 링크*/
+            color:green;
+        }
+        /* p:hover{
+            color:red;
+        }
+        p:active{
+            color:violet;
+        }
+        input:focus{
+            color:greenyellow;
+        }
+        input:checked+label{
+            color:aqua;
+        }
+        input:disabled, button:disabled{
+            background-color:aquamarine;
+        }
+        input:enabled, button:enabled{
+           background-color:brown;
+        }
+        li:first-child{
+            color:red;
+        }
+        li:last-child{
+            color:red;
+        }
+        p:nth-child(1){
+            color:pink;
+        }
+        p:nth-last-child(1){
+            color:grey;
+        } */
+        p:nth-of-type(1){
+            color: blue;
+        }
+        p:nth-last-of-type(1){
+            color: red;
+        }
+      </style>  
+    </head>
+    <body>
+        <ol>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ol>
+        <input type="text"><br>
+        <input type="checkbox"><label>checked+label</label><br>
+        <input type="text" disabled>disabled text<br>
+        <button disabled>버튼 disabled</button><br>
+        <input type="text">enabled text<br>
+        <button>버튼 enabled</button><br>
+        <a href="http://www.daum2.net">전체 선택자는 모든 요소를 한 번에 선택할 수 있습니다.</a>
+        <a href="http://www.naver.com">전체 선택자는 모든 요소를 한 번에 선택할 수 있습니다.</a>
+        <p>전체 선택자는 모든 요소를 한 번에 선택할 수 있습니다.</p>
+        <p>lorem 0</p>
+            <div>
+                <p>lorem 1</p>
+                <span>span 1</span>
+                <p>lorem 2</p>
+            </div>
+            <div>
+                <p>lorem 3</p>
+                <span>span2</span>
+                <span>span3</span>
+                <p>lorem 4</p>
+            </div>
+    </body>
+</html>

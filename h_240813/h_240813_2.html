@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>문진배 숙제2</title>
+      <style>
+        form{
+            width: 1475px;
+        }
+        .table1,.tr1,.th1,.td1{
+            border: 2px solid gray ;
+            border-collapse: collapse ;
+            text-align: center;
+            color: navy;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        .table2,.tr2,.th2,.td2{
+            border: 2px solid black ;
+            border-collapse: collapse ;
+            text-align: center;
+            padding-left: 29px;
+            padding-right: 29px;
+            height: 20px;
+            white-space: nowrap;     
+        }
+      </style>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Incoming Invoice</legend>
+                    <p>
+                    <label>Account Month</label>
+                        <input type="text" style="width: 100px;">
+                    <label>Billing Month</label>
+                        <input type="text" style="width: 100px;">
+                    <label>Billing Period</label>
+                        <input type="text" style="width: 70px;">
+                    <label>Carrier</label>
+                        <input type="text" style="width: 70px;">
+                    </p>
+                    <p>
+                    <label>Confirm :</label>
+                    <input type="radio">ALL
+                    <input type="radio">Good
+                    <input type="radio">ERROR
+                    </p>
+                    <p>
+                    <label>Dom/int Flag :</label>
+                    <input type="radio">ALL
+                    <input type="radio">Good
+                    <input type="radio">ERROR
+                    </p>
+                    <button type="button">inquiry</button>
+                    <button type="button">Clear</button>
+                    <button type="button">Excel</button>
+            </fieldset>
+        </form>
+        <br>
+        <table class="table1">
+            <tr class="tr1">
+               <th class="th1" style="background-color: rgb(201, 199, 199);">Account Month</th>
+               <td class="td1"><input type="text" style="width: 80px;"></td>
+               <th class="td1" style="background-color: rgb(201, 199, 199);">Billing Month</th>
+               <td class="td1"><input type="text" style="width: 80px;"></td>
+               <th class="th1" style="background-color: rgb(201, 199, 199);">Billing Period</th>
+               <td class="td1"><input type="text" style="width: 60px;"></td>
+               <th class="th1" style="background-color: rgb(201, 199, 199);">Carrier</th>
+               <td class="td1"><input type="text" style="width: 60px;"></td> 
+            </tr>
+            <tr class="tr1">
+                <th class="th1" style="background-color: rgb(201, 199, 199);">Invoice Key</th>
+                <td class="td1"><input type="text" style="width: 80px;"></td>
+                <td class="td1" style="background-color: rgb(201, 199, 199);">Currency</td>
+                <td class="td1"><input type="text" style="width: 60px;"></td>
+                <td class="td1" style="background-color: rgb(201, 199, 199);">ROE</td>
+                <td class="td1"><input type="text" style="width: 100px;"></td>
+                <td class="td1" style="background-color: rgb(201, 199, 199);">Gross</td>
+                <td class="td1"><input type="text" style="width: 100px;"></td>               
+            </tr>
+            <tr class="tr1">
+                <td class="td1" style="background-color: rgb(201, 199, 199);">ISC Amount</td>
+                <td class="td1"><input type="text" style="width: 100px;"></td>
+                <td class="td1" style="background-color: rgb(201, 199, 199);">TAX</td>
+                <td class="td1"><input type="text" style="width: 100px;"></td>
+                <td class="td1" style="background-color: rgb(201, 199, 199);">NET</td>
+                <td class="td1"><input type="text" style="width: 100px;"></td>
+                <td class="td1" style="background-color: rgb(201, 199, 199);">Coupon</td>
+                <td class="td1"><input type="text" style="width: 80px;"></td>  
+            </tr>
+            <tr class="tr1">
+                <td class="td1" style="background-color: rgb(201, 199, 199);">Dom/int</td>
+                <td class="td1"><input type="checkbox">ALL</td>
+                <td class="td1"><input type="checkbox">Good</td>
+                <td class="td1"><input type="checkbox">ERROR</td>
+                <td class="td1"></td>
+                <td class="td1"></td>
+                <td class="td1"></td>
+                <td class="td1"></td>  
+            </tr>
+        </table>
+        <p>
+        <button type="button">Insert</button>
+        <button type="button">Replace</button>
+        <button type="button">Delete</button>
+        <button type="button">Confirm</button>
+        <button type="button">Undo CNF</button>
+        </p>
+        <table class="table2">
+            <tr class="tr2">
+                <th class="th2" style="background-color: rgb(124, 247, 113);">No.</th>
+                <th class="th2" style="background-color: rgb(124, 247, 113);">Carrier</th>
+                <th class="th2" style="background-color: rgb(124, 247, 113);">Account Month</th>
+                <th class="th2" style="background-color: rgb(124, 247, 113);">Billing Month</th>
+                <th class="th2" style="background-color: rgb(124, 247, 113);">Billing Period</th>
+                <th class="th2" style="background-color: rgb(124, 247, 113);">Invoice</th>
+                <th class="th2" style="background-color: rgb(124, 247, 113);">Link</th>
+                <th class="th2" style="background-color: rgb(124, 247, 113);">Currency</th>
+                <th class="th2" style="background-color: rgb(124, 247, 113);">Confirm</th>
+                <th class="th2" style="background-color: rgb(124, 247, 113);">NET</th>
+                <th class="th2" style="background-color: rgb(124, 247, 113);">Audit</th>
+                <th class="th2" style="background-color: rgb(124, 247, 113);">Dom/Int</th>
+            </tr>
+            <tr class="tr2">
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+            </tr>
+            <tr class="tr2">
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+            </tr>
+            <tr class="tr2">
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+            </tr>
+            <tr class="tr2">
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+            </tr>
+            <tr class="tr2">
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+                <td class="td2"></td>
+            </tr>
+        </table>
+    </body>
+</html>

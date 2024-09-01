@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>문진배 240808 시험 예제 회원가입2</title>
+        <style>
+            body{
+                background-color: white;
+            }        
+            .flex-container{
+                background-color: rgb(24, 7, 46); 
+                color: white;
+                width: 450px;
+                height: 500px;
+                text-align: center; 
+                margin-top: 30px;
+                padding-top: 20px;
+                position: absolute;
+                left: 400px;
+            }
+            #div1{
+                background-color: rgb(61, 61, 61);
+                color: white;
+                font-size: medium;
+                display: inline-block;
+                width: 210px;
+                height: 50px;
+                line-height: 50px;
+            }
+            #div2{
+                background-color: rgb(105, 39, 167);
+                color: white;
+                font-size: medium;
+                display: inline-block;
+                width: 210px;
+                height: 50px;
+                line-height: 50px;
+            }
+            input{
+                background-color: rgb(1, 30, 37);
+                color: gray;
+                border-color: 1px solid white;
+                margin: 20px;
+                width: 400px;
+                height: 30px;
+            }
+            button{
+                background-color: rgb(105, 39, 167);
+                color: white;
+                margin-top: 20px;
+                width: 400px;
+                height: 50px;
+                font-size: 25px;
+            }
+            .hidden{
+                visibility: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <a href="R_MJB_240808_1.html"><div id="div1">회원가입</div></a><div id="div2">로그인</div>
+            <h2>자바 활용 데이터 플랫폼 과정</h2>
+            <input type="email" placeholder="EmailAddress *"><br>
+            <input type="password" placeholder="Password *"><br>
+            <input class="hidden" type="password" placeholder="Comfirm A Password *"><br>
+            <button>로그인</button>
+       </div>
+    </body>
+</html>
